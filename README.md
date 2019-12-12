@@ -35,8 +35,8 @@ dx = 40
 dy = 230
 dumpStashDelta := 35
 ```
-nx, ny are the coordinates for the first slot of your normal inventory.
-dx, dy are the coordinates for the first slot of your 24x24 dumptab.
+nx, ny are the coordinates for the first slot of your normal inventory.[Image](![b07dbe12.png](:storage\7d512091-4c10-45fa-9ebf-6d56ced6f906\b07dbe12.png))
+dx, dy are the coordinates for the first slot of your 24x24 dumptab. [Image](![c7564f67.png](:storage\7d512091-4c10-45fa-9ebf-6d56ced6f906\c7564f67.png))
 You get the delta by substracting the second slot coordinates from the first slot one.
 
 ```
@@ -82,15 +82,30 @@ Loop, 9 {
 return
 ```
 
+### Setting up get maps/divcards/currency from inventory.
+
+For 2560x1440 leave as is.
+For fullHD comment the first line and uncomment the second last line.
+
+```
+stash = pyautogui.screenshot(region=(0, 0, 870, 1060))
+#2560x1440
+
+#stash = pyautogui.screenshot(region=(0, 0, 650, 800))
+# fullHd(1900x1080) for above
+```
+
+
 
 ## Hotkeys:
 F12 activate/deactivate flaskmacro
-alt + o Initialize empty inventory slots to only click non-empty slots.
-alt + p Initialize empty 24x24 dumptab inventory slots to only click non-empty slots.
+alt + o Initialize empty inventory slots to only click non-empty slots. All inventory slots need to be empty.
+alt + p Initialize empty 24x24 dumptab inventory slots to only click non-empty slots. All 24x24 tab slots need to be empty.
 alt + a Move items from dumptab to inventory untill full.
 alt + j Get all the currency from 24x24 tab.
 alt + k Get all the maps from 24x24 tab.
-alt + p 
-alt + p
+alt + l Get all divination cards from 24x24 tab.
+alt + v Roll prophecies and move them into inventory.
+
 alt + p 
 
