@@ -35,8 +35,8 @@ dx = 40
 dy = 230
 dumpStashDelta := 35
 ```
-nx, ny are the coordinates for the first slot of your normal inventory.[Image](![b07dbe12.png](:storage\7d512091-4c10-45fa-9ebf-6d56ced6f906\b07dbe12.png))
-dx, dy are the coordinates for the first slot of your 24x24 dumptab. [Image](![c7564f67.png](:storage\7d512091-4c10-45fa-9ebf-6d56ced6f906\c7564f67.png))
+nx, ny are the coordinates for the first slot of your normal inventory.[Image](https://github.com/Anssikka/PoeCarpalTunnelPreventer/blob/master/InstructionImages/InventoryTab.png?raw=true)
+dx, dy are the coordinates for the first slot of your 24x24 dumptab. [Image](https://github.com/Anssikka/PoeCarpalTunnelPreventer/blob/master/InstructionImages/DumpTab.png?raw=true)
 You get the delta by substracting the second slot coordinates from the first slot one.
 
 ```
