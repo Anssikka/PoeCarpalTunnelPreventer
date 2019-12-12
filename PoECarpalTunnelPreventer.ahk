@@ -72,7 +72,6 @@ FlaskDurationInit[2] := 0
 FlaskDurationInit[3] := 3500
 FlaskDurationInit[4] := 4500
 FlaskDurationInit[5] := 5700
-FlaskDurationInit["e"] := 0	; 
 FlaskDurationInit["r"] := 0	
 FlaskDurationInit["q"] := 0	
 
@@ -179,21 +178,15 @@ Loop {
 	; pass-thru and start timer for r
 	FlaskLastUsed["r"] := A_TickCount
 	Random, VariableDelay, -99, 99
-	FlaskDuration[5] := FlaskDurationInit[5] + VariableDelay ; randomize duration to simulate human
+	FlaskDuration[r] := FlaskDurationInit[r] + VariableDelay ; randomize duration to simulate human
 	return
 
-~e::
-	; pass-thru and start timer for e
-	FlaskLastUsed["e"] := A_TickCount
-	Random, VariableDelay, -99, 99
-	FlaskDuration[5] := FlaskDurationInit[5] + VariableDelay ; randomize duration to simulate human
-	return
 
 ~q::
 	; pass-thru and start timer for q
 	FlaskLastUsed["q"] := A_TickCount
 	Random, VariableDelay, -99, 99
-	FlaskDuration[5] := FlaskDurationInit[5] + VariableDelay ; randomize duration to simulate human
+	FlaskDuration[q] := FlaskDurationInit[q] + VariableDelay ; randomize duration to simulate human
 	return
 
 ;----------------------------------------------------------------------
@@ -217,9 +210,6 @@ Loop {
 		Send 5
 		Random, VariableDelay, -99, 99
 		Sleep, %VariableDelay%
-		Send e
-		Random, VariableDelay, -99, 99
-		Sleep, %VariableDelay%
 		Send r
 		Random, VariableDelay, -99, 99
 		Sleep, %VariableDelay%
@@ -238,6 +228,16 @@ CycleAllFlasksWhenReady:
 			sleep, %VariableDelay%
 		}
 	}
+	return
+
+
+; Smokemine ; 
+
+~e::
+	Random, VariableDelay, 231, 384
+	Sleep, %VariableDelay%
+	send d
+	
 	return
 
 
