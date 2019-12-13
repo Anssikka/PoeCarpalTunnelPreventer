@@ -241,6 +241,14 @@ CycleAllFlasksWhenReady:
 	return
 
 
+!s::
+; 835, 295
+	send {Click, 835, 295}
+	send {Click, 880, 1120}
+	send speed
+	return
+
+
 ;----------------------------------------------------------------------
 ; The following are used for fast ctrl-click from the Inventory screen
 ; using alt-c.  The coordinates for ix,iy come from MouseGetPos (Alt+g)
