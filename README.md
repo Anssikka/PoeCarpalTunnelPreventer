@@ -99,12 +99,19 @@ stash = pyautogui.screenshot(region=(0, 0, 870, 1060))
 
 ## Hotkeys:
 F12 activate/deactivate flaskmacro
+
 alt + o Initialize empty inventory slots to only click non-empty slots. All inventory slots need to be empty.
+
 alt + p Initialize empty 24x24 dumptab inventory slots to only click non-empty slots. All 24x24 tab slots need to be empty.
+
 alt + a Move items from dumptab to inventory untill full.
+
 alt + j Get all the currency from 24x24 tab.
+
 alt + k Get all the maps from 24x24 tab.
+
 alt + l Get all divination cards from 24x24 tab.
+
 alt + v Roll prophecies and move them into inventory.
 
 alt + p 
