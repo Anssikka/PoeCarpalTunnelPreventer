@@ -7,7 +7,7 @@ aspects of the game from flasks to inventory management.
 ## Features
 
 + Poe flask macro, this is straight from https://github.com/JoelStanford/PoEAutoFlask autoflask and there 
-are no additios here so all power to him.
+are no additions here so all power to him.
 + Move all the items from your inventory to stash.
 + Move items from your stashtab to inventory.
 + Identify all the items from dump stash tab.
